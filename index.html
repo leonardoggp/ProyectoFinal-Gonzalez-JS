@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonardo Gonzalez</title>
+    
+    <!-- ! Estilos -->
+    <link rel="stylesheet" type="text/css" href="css/style_index.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+    <menu class="menu">
+        <button class="menu__item active">
+            <div class="menu__icon" >
+                
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 179.1 145" >
+                    
+                    <g id="home-anm">
+                        <path stroke-linejoin="round"  stroke-linecap="round" d="M70.5,80.1h40.7"/>
+                        <path d="M35,64v80"/>
+                        <path d="M145.1,143V63"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M24.9,70l65.7-50.7L156.3,70"/>
+                    </g>
+                    
+                    <path stroke-linejoin="round" d="M145.1,117.6v33.1c0,1.5-1.2,2.8-2.8,2.8h-28.4c-1.5,0-2.8-1.2-2.8-2.8V126c0-11.3-9.2-20.5-20.5-20.5l0,0
+                    c-11.3,0-20.5,9.2-20.5,20.5v27.5h16H37.8c-1.5,0-2.8-1.2-2.8-2.8v-34.2"/>
+                    
+                </svg>
+                
+            </div>
+            <strong class="menu__text active">Home</strong>
+        </button>
+        
+        <button class="menu__item" onclick="muestraOculta(1)">
+            <div class="menu__icon" >
+                
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.000000 512.000000">
+                    
+                    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)">
+                        <path fill="currentColor" stroke-width="0" d="M2257 5085 c-761 -96 -1419 -505 -1837 -1140 -83 -126 -212 -384 -265 -529 -163 -444 -197 -956 -95 -1431 51 -236 163 -521 290 -738 327 -559
+                        855 -975 1473 -1161 189 -56 261 -69 367 -64 255 14 447 160 543 415 21 56 22
+                        76 27 552 l5 494 69 19 c298 81 550 322 653 623 45 134 53 214 53 554 0 286
+                        -2 320 -19 356 -40 88 -98 115 -246 115 l-105 0 0 278 c0 248 -2 281 -19 317
+                        -71 153 -291 153 -362 0 -17 -36 -19 -69 -19 -317 l0 -278 -200 0 -200 0 0
+                        278 c0 248 -2 281 -19 317 -22 48 -54 79 -103 100 -100 41 -214 -3 -259 -100
+                        -17 -36 -19 -69 -19 -317 l0 -278 -110 0 c-153 0 -210 -26 -251 -115 -17 -36
+                        -19 -70 -19 -356 0 -336 8 -425 51 -552 92 -268 310 -497 569 -596 41 -16 92
+                        -32 113 -36 l37 -7 0 -447 c0 -276 -4 -460 -10 -483 -22 -79 -102 -137 -190
+                        -138 -25 0 -95 13 -156 30 -370 99 -689 284 -965 559 -249 250 -422 529 -532
+                        863 -252 759 -45 1615 526 2189 398 398 898 618 1452 636 514 17 983 -133
+                        1396 -448 367 -279 656 -718 769 -1167 258 -1024 -234 -2061 -1192 -2511 -110
+                        -52 -138 -75 -163 -133 -56 -136 71 -299 214 -273 54 9 322 145 441 223 389
+                        255 691 594 899 1013 90 181 149 340 196 529 55 224 70 363 69 625 -1 246 -12
+                        349 -60 562 -167 744 -676 1385 -1369 1723 -245 120 -476 193 -745 235 -144
+                        23 -537 29 -683 10z m883 -2517 c0 -290 -33 -393 -169 -529 -184 -184 -424
+                        -226 -660 -114 -97 46 -213 161 -259 255 -49 100 -62 179 -62 388 l0 182 575
+                        0 575 0 0 -182z"/>
+                    </g>
+                </svg>
+                
+            </div>
+            <strong class="menu__text">Artefactos</strong>
+        </button>
+        
+        <button class="menu__item">
+            <div class="menu__icon" >
+                
+                <svg class="icon"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.000000 512.000000" >
+                    
+                    
+                    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)">
+                        <path fill="currentColor" stroke-width="0" d="M2206 5104 c-232 -52 -419 -203 -516 -418 -67 -148 -63 -71 -67
+                        -1365 l-4 -1173 -97 -97 c-179 -177 -295 -391 -343 -636 -18 -90 -18 -359 0
+                        -440 69 -310 226 -559 466 -738 416 -310 1001 -313 1414 -7 316 234 491 581
+                        491 970 0 328 -119 610 -357 848 l-103 103 0 1137 c0 702 -4 1163 -10 1206
+                        -24 164 -85 281 -215 411 -141 142 -281 203 -485 211 -72 2 -127 -1 -174 -12z
+                        m273 -199 c93 -22 177 -71 251 -145 77 -77 113 -140 140 -246 19 -75 20 -114
+                        20 -1261 0 -752 4 -1191 10 -1203 5 -10 46 -48 90 -85 152 -125 266 -300 327
+                        -500 25 -83 27 -103 27 -265 0 -204 -15 -274 -89 -428 -55 -115 -90 -165 -174
+                        -254 -84 -90 -160 -148 -264 -203 -526 -277 -1183 -26 -1393 534 -153 406 -24
+                        861 321 1134 27 22 55 47 62 57 9 13 13 293 15 1226 l3 1209 22 65 c44 126
+                        114 222 209 285 130 86 277 114 423 80z"/>
+                        <path fill="currentColor" stroke-width="0" d="M2308 4345 c-15 -8 -32 -24 -38 -35 -7 -12 -10 -451 -10 -1323 l0
+                        -1304 -42 -12 c-219 -65 -372 -284 -354 -506 34 -421 529 -614 832 -324 73 70
+                        125 163 144 256 15 72 8 191 -16 263 -43 129 -160 249 -291 298 l-73 27 0
+                        1288 c0 1354 1 1329 -43 1365 -24 20 -79 24 -109 7z m180 -2884 c141 -73 201
+                        -244 134 -386 -52 -110 -147 -170 -268 -169 -120 0 -217 63 -268 173 -31 69
+                        -28 179 7 247 31 61 102 127 160 148 60 22 179 16 235 -13z"/>
+                        <path fill="currentColor" stroke-width="0" d="M3532 4565 c-35 -29 -45 -69 -28 -110 20 -48 40 -57 138 -66 126 -12
+                        198 -32 303 -84 259 -128 415 -364 440 -669 6 -69 11 -83 35 -108 39 -39 88
+                        -38 132 1 33 29 33 30 31 113 -14 460 -359 852 -822 933 -129 23 -193 20 -229
+                        -10z"/>
+                        <path fill="currentColor" stroke-width="0" d="M593 4340 c-32 -13 -57 -57 -56 -98 1 -27 9 -43 32 -64 l31 -28 320
+                        0 320 0 32 29 c24 22 32 37 32 63 0 43 -26 86 -60 98 -32 12 -621 12 -651 0z"/>
+                        <path fill="currentColor" stroke-width="0" d="M3532 4135 c-35 -29 -45 -69 -28 -110 19 -45 38 -56 117 -66 184 -23
+                        303 -140 330 -325 15 -96 44 -134 104 -134 43 0 94 44 96 82 2 67 -5 128 -22
+                        182 -57 184 -209 329 -395 376 -108 28 -165 26 -202 -5z"/>
+                        <path fill="currentColor" stroke-width="0" d="M871 3886 c-59 -33 -67 -102 -16 -153 l34 -34 180 3 181 3 27 28 c41
+                        40 39 99 -5 138 l-32 29 -173 0 c-123 -1 -179 -4 -196 -14z"/>
+                        <path fill="currentColor" stroke-width="0" d="M3528 3702 c-30 -18 -58 -67 -58 -102 0 -36 31 -90 61 -105 15 -8 47
+                        -15 70 -15 70 0 132 79 114 147 -3 14 -21 41 -40 60 -27 27 -40 33 -76 33 -24
+                        0 -56 -8 -71 -18z"/>
+                        <path fill="currentColor" stroke-width="0" d="M572 3425 c-36 -30 -45 -69 -27 -112 25 -60 41 -63 377 -63 281 0
+                        305 1 334 19 45 27 61 79 39 124 -9 19 -27 39 -41 46 -17 7 -125 11 -339 11
+                        l-313 0 -30 -25z"/>
+                        <path fill="currentColor" stroke-width="0" d="M853 2976 c-23 -20 -28 -32 -28 -69 0 -54 22 -82 74 -97 50 -14 298
+                        -12 341 3 49 17 76 72 60 122 -20 61 -33 65 -237 65 -178 0 -183 -1 -210 -24z"/>
+                        <path fill="currentColor" stroke-width="0" d="M592 2545 c-64 -28 -75 -114 -20 -160 l30 -25 322 0 c313 0 323 1
+                        345 21 52 49 46 124 -13 160 -29 18 -52 19 -331 19 -237 -1 -307 -4 -333 -15z"/>
+                    </g>
+                    
+                </svg>
+                
+            </div>
+            <strong class="menu__text">Climatización</strong>
+        </button>
+        
+        <button class="menu__item">
+            <div class="menu__icon" >
+                
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.000000 512.000000" >
+                    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)">
+                        <path fill="currentColor" stroke-width="0" d="M1745 4009 c-299 -44 -580 -207 -759 -442 -29 -40 -135 -191 -234
+                        -335 l-180 -264 -76 -33 c-186 -81 -356 -255 -432 -443 -53 -133 -59 -171 -59
+                        -417 l0 -230 28 -57 c32 -64 80 -111 146 -142 38 -17 71 -21 182 -24 l135 -4
+                        12 -81 c60 -412 550 -581 841 -290 96 96 151 216 151 330 l0 43 325 0 325 0
+                        32 29 c27 24 33 36 33 71 0 35 -6 47 -33 71 l-32 29 -349 0 -349 0 -25 43
+                        c-14 23 -47 63 -74 89 -161 156 -379 190 -583 90 -63 -31 -179 -142 -199 -189
+                        l-13 -33 -139 0 c-217 0 -219 2 -219 247 0 202 14 276 71 393 71 144 201 256
+                        371 320 l58 21 162 237 c264 387 298 434 368 503 143 141 313 229 516 264 69
+                        12 181 15 544 15 487 0 557 -5 693 -51 159 -54 332 -173 429 -296 30 -37 144
+                        -198 252 -358 109 -159 207 -299 217 -310 18 -19 37 -20 262 -26 231 -5 246
+                        -7 322 -33 205 -71 350 -217 423 -425 24 -71 26 -90 30 -288 l4 -213 -169 0
+                        -169 0 -23 41 c-77 136 -260 239 -426 239 -165 0 -350 -104 -426 -239 l-23
+                        -41 -342 0 c-369 0 -384 -2 -410 -51 -18 -35 -18 -63 0 -98 26 -49 42 -51 386
+                        -51 l320 0 0 -53 c0 -272 281 -501 566 -460 231 33 424 242 424 460 l0 53 205
+                        0 c137 0 213 4 230 12 51 23 55 46 55 310 0 134 -5 272 -10 308 -44 279 -221
+                        517 -475 640 -146 71 -205 83 -440 89 l-200 6 -205 300 c-160 235 -224 320
+                        -295 391 -176 179 -398 292 -642 329 -77 12 -200 15 -573 14 -261 -1 -502 -5
+                        -535 -10z m-618 -2138 c63 -32 111 -78 141 -135 23 -44 27 -63 27 -136 0 -73
+                        -4 -92 -27 -136 -54 -103 -148 -158 -268 -159 -59 0 -85 5 -124 24 -108 53
+                        -169 149 -170 266 -2 137 78 249 206 291 60 19 162 13 215 -15z m3103 12 c67
+                        -22 146 -92 176 -158 32 -67 33 -179 3 -245 -83 -185 -321 -236 -471 -101 -71
+                        63 -98 125 -98 221 0 96 27 158 98 221 83 75 186 96 292 62z"/>
+                        <path fill="currentColor" stroke-width="0" d="M938 1671 c-27 -24 -33 -36 -33 -71 0 -35 6 -47 33 -71 36 -32 69
+                        -36 112 -14 35 18 50 43 50 85 0 42 -15 67 -50 85 -43 22 -76 18 -112 -14z"/>
+                        <path fill="currentColor" stroke-width="0" d="M4094 1691 c-56 -24 -72 -109 -30 -158 20 -23 32 -28 71 -28 60 0 95
+                        35 95 95 0 70 -72 118 -136 91z"/>
+                        <path fill="currentColor" stroke-width="0" d="M1800 3614 c-167 -29 -322 -106 -431 -216 -30 -29 -120 -150 -201
+                        -268 -153 -222 -166 -249 -138 -301 26 -48 38 -49 529 -49 268 0 470 4 485 10
+                        14 5 33 21 43 37 16 24 18 59 21 338 2 170 0 329 -3 353 -3 23 -17 55 -30 70
+                        -23 26 -26 27 -137 29 -62 0 -124 -1 -138 -3z m100 -414 l0 -220 -296 0 c-233
+                        0 -294 3 -288 13 49 81 170 240 216 282 85 79 231 141 336 144 l32 1 0 -220z"/>
+                        <path fill="currentColor" stroke-width="0" d="M2363 3610 c-12 -5 -30 -21 -40 -37 -16 -25 -18 -56 -18 -373 0 -316
+                        2 -348 18 -373 10 -16 29 -32 43 -37 39 -15 1106 -13 1139 2 30 14 55 55 55
+                        92 0 16 -49 99 -132 223 -174 259 -269 359 -408 426 -147 72 -184 79 -425 83
+                        -116 2 -220 0 -232 -6z m451 -210 c155 -39 251 -116 376 -300 l81 -120 -381 0
+                        -380 0 0 220 0 220 113 0 c81 0 136 -6 191 -20z"/>
+                        <path fill="currentColor" stroke-width="0" d="M2358 2564 c-35 -19 -48 -43 -48 -92 0 -33 6 -45 31 -66 28 -24 38
+                        -26 126 -26 91 0 96 1 124 29 51 51 33 137 -33 160 -45 16 -168 13 -200 -5z"/>
+                        <path fill="currentColor" stroke-width="0" d="M2521 1806 c-90 -50 -50 -186 54 -186 14 0 39 13 57 29 86 77 -10
+                        213 -111 157z"/>
+                    </g>
+                    
+                    
+                </svg>
+                
+            </div>
+            <strong class="menu__text">Transporte</strong>
+        </button>
+        
+        
+    </menu>
+    <section >
+        <!-- ! Datos del curso-->
+        <div class="row contenido">
+            <div class="col-lg-1 col-md-1 col-sm-12 h-25"></div>
+            <div class="col-10 d-flex flex-column">
+                <h1 class="badge rounded-pill bg-success">Leonardo G. González Páez</h1>
+                <h2 class="badge rounded-pill bg-warning">JavaScript</h2>
+                <h3 class="badge rounded-pill bg-warning">Comisión 39520</h3>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-12 h-25"></div>
+        </div>
+        
+        <!-- ! Datos del proyecto-->
+        <div class="row" id="sec1">
+            
+            <div class="col-lg-2 col-md-2 col-sm-12 h-25"></div>
+            <div class="card col-lg-8 col-md-8 col-sm-12">
+                <div class="card-body">
+                    <div class="alert alert-success text-center display-5">
+                        <img class="float-start imagen" src="img/huella.png" alt="Huella" style="width:5%">
+                        <strong class="display-6">Calculadora Huella de Carbono Personal</strong> 
+                    </div>
+                    <div>
+                        <p>
+                            Estimación de las emisiones de Gases de Efecto Invernadero (G.E.I.), traducidas en Emisiones de CO₂ (Dióxido de Carbono), liberadas a la atmósfera por los consumos directos e indirectos de Energía Eléctrica y Combustibles fósiles, por las actividades que realizás en el ámbito laboral anualmente.
+                            <br>
+                            La misma se divide en 3 apartados: 
+                        </p>
+                        <strong>1. Consumo de Artefactos Eléctricos</strong> <br>
+                        <p>
+                            Estimaciones de las emisiones por el consumo de energía eléctrica de los artefactos que utiliza diariamente en sus actividades laborales.
+                        </p>
+                        <strong> 2.  Consumo para la Climatización </strong> <br>
+                        <p>
+                            Estimación de las emisiones asociadas al consumo para la climatización de las oficinas.
+                        </p>
+                        <strong>3.  Consumo Combustibles por Transporte</strong> <br>
+                        <p>
+                            Estimación de las emisiones asociadas por el consumo de combustibles fósiles, calculadas a partir de los kilómetros que realiza por día para trasladarse hacia el trabajo y del trabajo a su casa; y las emisiones por el consumo de combustible por traslados de indole laboral (asistencia a reuniones, cursos y/o capacitaciones u otros compromisos) que realizó durante el año considerado para el calculo.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-12 h-25"></div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="sec2">
+        <div class="container.fluid ">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-12 h-25"></div>
+                <div class="card col-lg-8 col-md-8 col-sm-12">
+                    <div class="card-body">
+                        <div class="alert alert-info text-center display-5">
+                            <img class="float-start imagen" src="img/huella.png" alt="Huella" style="width:5%">
+                            <strong>Consumo de Artefactos Eléctricos</strong> 
+                        </div>
+                        <div class="row">
+                            <div class="col"></div>
+                            <div class="col-6">
+                                <h5>Artefactos Eléctricos</h5>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-success">+</button>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <table class="table table-dark">         
+                                <thead class="thead-dark">
+                                    <tr id="trId">
+                                        <th>Nº</th>
+                                        <th>Tipo de artefacto</th>
+                                        <th>Horas de uso/día</th>
+                                        <th>Emisiones (kgCO₂eq)</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="items" class="table-striped"></tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th id="total"></th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <div class="row">
+                                <div class="col"></div>
+                                <div class="col-6">
+                                    <h5>Iluminación</h5>
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-success">+</button>
+                                </div>
+                            </div>
+                            
+                            <table class="table table-dark">         
+                                <thead class="thead-dark">
+                                    <tr id="trId">
+                                        <th>Nº</th>
+                                        <th>Tipo de Lámparas</th>
+                                        <th>Potencia</th>
+                                        <th>Cantidad</th>
+                                        <th>Horas de uso/día</th>
+                                        <th>Emisiones (kgCO₂eq)</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="items" class="table-striped"></tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th id="total"></th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 h-25"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="sec3">
+        <div class="container.fluid ">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-12 h-25"></div>
+                <div class="card col-lg-8 col-md-8 col-sm-12">
+                    <div class="card-body">
+                        <div class="alert alert-info text-center display-5">
+                            <img class="float-start imagen" src="img/huella.png" alt="Huella" style="width:5%">
+                            <strong class="display-6">Consumo Calefacción  + Refrigeración </strong> 
+                        </div>
+                        <div class="row">
+                            <div class="col"></div>
+                            <div class="col-6">
+                                <h5>Calefacción - Invierno</h5>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-success">+</button>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <table class="table table-dark">         
+                                <thead class="thead-dark">
+                                    <tr id="trId">
+                                        <th>Nº</th>
+                                        <th>Artefacto</th>
+                                        <th>Horas de uso/día</th>
+                                        <th>Emisiones (kgCO₂eq)</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="items" class="table-striped"></tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th id="total"></th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <div class="row">
+                                <div class="col"></div>
+                                <div class="col-6">
+                                    <h5>Refrigeración - Verano</h5>
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-success">+</button>
+                                </div>
+                            </div>
+                            
+                            <table class="table table-dark">         
+                                <thead class="thead-dark">
+                                    <tr id="trId">
+                                        <th>Nº</th>
+                                        <th>Artefacto</th>
+                                        <th>Horas de uso/día</th>
+                                        <th>Emisiones (kgCO₂eq)</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="items" class="table-striped"></tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th id="total"></th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 h-25"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="sec4">
+        <div class="container.fluid ">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-12 h-25"></div>
+                <div class="card col-lg-8 col-md-8 col-sm-12">
+                    <div class="card-body">
+                        <div class="alert alert-info text-center display-5">
+                            <img class="float-start imagen" src="img/huella.png" alt="Huella" style="width:5%">
+                            <strong class="display-6">Consumo Combustibles por Transporte</strong> 
+                        </div>
+                        <div class="row">
+                            <div class="col"></div>
+                            <div class="col-6">
+                                <h5>Traslados - Casa al trabajo</h5>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-success">+</button>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <table class="table table-dark">         
+                                <thead class="thead-dark">
+                                    <tr id="trId">
+                                        <th>Nº</th>
+                                        <th>Medio de transporte</th>
+                                        <th>Km/día Ida al trabajo</th>
+                                        <th>Km/día Vuelta a casa</th>
+                                        <th>Emisiones (kgCO₂eq)</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="items" class="table-striped"></tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th id="total"></th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <div class="row">
+                                <div class="col"></div>
+                                <div class="col-6">
+                                    <h5>Traslados Laborales</h5>
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-success">+</button>
+                                </div>
+                            </div>
+                            
+                            <table class="table table-dark">         
+                                <thead class="thead-dark">
+                                    <tr id="trId">
+                                        <th>Nº</th>
+                                        <th>Medio de transporte</th>
+                                        <th>km Totales</th>
+                                        <th>Emisiones (kgCO₂eq)</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="items" class="table-striped"></tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th id="total"></th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 h-25"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ?SCRIPT-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/MostrarOcultar.js"></script>
+    
+    
+</body>
+</html>
