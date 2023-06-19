@@ -2,7 +2,7 @@
 
 // ! Declaración e Inicialización de variables, constantes y parametros
 // ? Datos del usuario
-let nombreUsuario;
+// let nombreUsuario;
 
 // ? Definición de tipos de días utilizados
 const diasLaborales = 230;
@@ -28,6 +28,38 @@ const diasVerano = 135;
 // *****************************************************************************************
 const tablaArtefactosElectricos = []; // decalro un array vacio para luego cargar los objetos
 
+
+////////////////////
+
+class ArtefactosElectricos{
+    
+    //*******************************************************************************************************************************
+    //** Grupo ** Fuente de emisión ** Fuente **	Factor Emisión (KgCO₂eq/UM) ** UM ** Horas de uso/día	** Emisiones (kgCO₂eq) **
+    //*******************************************************************************************************************************
+    
+    //! Atributos
+    grupo="Artefactos"; //? constante para cada clase ==> Artefactos Eléctricos
+    fuente_emision;
+    factor_emision; //* KgCO₂eq/UM -- para todos los casos UM (unidad de tiempo) es hs	
+    horas_uso; //? queda como undefined en el contructor ya que es un parametro de entrada del usuario
+    emisiones; //? queda como undefined en el contructor ya que lo calcularemos por un metodo
+    //! Constructor
+    constructor(fuente_emision, factor_emision){
+        this.fuente_emision=fuente_emision;
+        this.factor_emision=factor_emision;
+    };
+    
+    //! Metodos
+    emisiones_artefactos = function (){
+        
+        this.emisiones= this.horas_uso * this.factor_emision;
+    }
+}
+
+
+
+//////////////////
+
 tablaArtefactosElectricos.push(new ArtefactosElectricos("PC Escritorio",0.35))
 tablaArtefactosElectricos.push(new ArtefactosElectricos("PC Portátil",0.010692))
 tablaArtefactosElectricos.push(new ArtefactosElectricos("Multifunción",0.4374))
@@ -37,8 +69,8 @@ tablaArtefactosElectricos.push(new ArtefactosElectricos("Microondas",0.31104))
 tablaArtefactosElectricos.push(new ArtefactosElectricos("Dispenser",0.1215))
 tablaArtefactosElectricos.push(new ArtefactosElectricos("Pava eléctrica",1.1664))
 
-console.log(tablaArtefactosElectricos)
-
+// console.log(tablaArtefactosElectricos)
+/*
 // ? Totales
 let totalEmisionArtefacto = 0;
 let totalEmisionIluminacion = 0;
@@ -84,3 +116,4 @@ if  (cargaApartado1 == 'si') {
 } else if (cargaApartado3 == 'si') {
 
 }
+*/

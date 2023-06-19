@@ -1,10 +1,12 @@
 const buttons = document.querySelectorAll(".menu__item");
 let activeButton = document.querySelector(".menu__item.active");
-
+//console.log(buttons);
+//console.log(activeButton);
 buttons.forEach(item => {
 
     const text = item.querySelector(".menu__text");
     setLineWidth(text, item);
+
 
     window.addEventListener("resize", () => {
         setLineWidth(text, item);

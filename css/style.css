@@ -25,7 +25,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow: visible;
-    align-items: upper;
+    align-items: center;
     justify-content: center;
     background-color: #f0f1f1;
     font-family: 'Nunito', sans-serif;
@@ -35,7 +35,7 @@ body {
 .menu {
 
     margin: 0;
-    width: 90em;
+    width: 70em;
     display: flex;
     height: 10.4em;
     user-select: none;
@@ -131,7 +131,7 @@ body {
 
 .menu__text {
 
-    left: 12em;
+    left: 9em;
     font-size: 1.5em;
     position: absolute;
     text-transform: capitalize;
@@ -159,7 +159,7 @@ body {
 
 .menu__item.active::after {
 
-    transform: translate3d(18em, 0, 0) scaleX(1);
+    transform: translate3d(13.5em, 0, 0) scaleX(1);
     transition: transform var(--duration) var(--cubic);
 
 }
@@ -213,3 +213,11 @@ body {
 
 }
 
+.mostrar {
+visibility: visible;
+}
+
+.ocultar{
+    visibility: hidden;
+    height: 0;
+}
