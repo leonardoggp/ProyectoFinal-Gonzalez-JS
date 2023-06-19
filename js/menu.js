@@ -14,7 +14,7 @@ buttons.forEach(item => {
 
     item.addEventListener("click", function() {
         if (this.classList.contains("active")) return;
-
+            
         this.classList.add("active");
         
         if (activeButton) {

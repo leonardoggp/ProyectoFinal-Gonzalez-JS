@@ -69,7 +69,7 @@ tablaArtefactosElectricos.push(new ArtefactosElectricos("Microondas",0.31104))
 tablaArtefactosElectricos.push(new ArtefactosElectricos("Dispenser",0.1215))
 tablaArtefactosElectricos.push(new ArtefactosElectricos("Pava eléctrica",1.1664))
 
-// console.log(tablaArtefactosElectricos)
+ console.log(tablaArtefactosElectricos)
 /*
 // ? Totales
 let totalEmisionArtefacto = 0;

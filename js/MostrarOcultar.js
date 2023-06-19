@@ -10,11 +10,11 @@ const sec4= document.querySelector("#sec4");
 
 botonMenu1.onclick = () => {
     if (sec1.classList.contains("mostrar")){
-        console.log("Activo")
+        // console.log("Activo")
     } else {
         sec1.classList.remove("ocultar");
         sec1.classList.add("mostrar");
-        console.log("no");
+        // console.log("no");
     };
     if (sec2.classList.contains("mostrar")){
         sec2.classList.remove("mostrar");
@@ -37,11 +37,11 @@ botonMenu2.onclick = () => {
     }
     
     if (sec2.classList.contains("mostrar")){
-        console.log("Activo")
+        // console.log("Activo")
     } else {
         sec2.classList.remove("ocultar");
         sec2.classList.add("mostrar");
-        console.log("no");
+        // console.log("no");
     };
     
     if (sec3.classList.contains("mostrar")){
@@ -66,11 +66,11 @@ botonMenu3.onclick = () => {
     };
     
     if (sec3.classList.contains("mostrar")){
-        console.log("Activo")
+        //console.log("Activo")
     } else {
         sec3.classList.remove("ocultar");
         sec3.classList.add("mostrar");
-        console.log("no");
+        //  console.log("no");
     };
     
     if (sec4.classList.contains("mostrar")){
@@ -91,11 +91,11 @@ botonMenu4.onclick = () => {
     };
     
     if (sec4.classList.contains("mostrar")){
-        console.log("Activo")
+        //console.log("Activo")
     } else {
         sec4.classList.remove("ocultar");
         sec4.classList.add("mostrar");
-        console.log("no");
+        //   console.log("no");
     };
     
     if (sec3.classList.contains("mostrar")){
